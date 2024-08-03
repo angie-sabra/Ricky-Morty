@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick and Morty Characters</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
-        <div id="header" class="text-center">
-            <h1 class="mt-5">Rick and Morty</h1>
-            <input type="text" id="search-input" class="form-control mt-3 mb-5 w-50 mx-auto" placeholder="Search for a character">
+        <div id="header" style="align-items: center; text-align: center;">
+            <h1 style="margin-top:5vw">Rick and Morty</h1><br><br>
+             <input type="text" id="search-input" placeholder="Search for a character" style="margin-bottom: 3vw;width:30vw;">
         </div>
-        <div id="character-list" class="row justify-content-center"></div>
+       
+        <div id="character-list" class="display"> </div>
+
     </div>
 
-   
+    
     <div class="modal fade" id="characterModal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -25,7 +27,8 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body" id="modal-body"></div>
+                <div class="modal-body" id="modal-body">
+                </div>
             </div>
         </div>
     </div>
